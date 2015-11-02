@@ -1,7 +1,10 @@
 # directiveDemo
 Angular directive demo
-####how to
+####install dependencies
 ```
 npm install
-http-server
+```
+####start a server
+```
+node_modules/http-server/bin/http-server
 ```
