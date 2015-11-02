@@ -1,0 +1,14 @@
+{
+  "name": "directive-demo",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "main.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leo",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.8.5"
+  }
+}
