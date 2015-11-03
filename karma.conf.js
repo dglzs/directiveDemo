@@ -15,11 +15,11 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'node_modules/angular/angular.min.js',
+      'node_modules/angular/angular.js',
       'node_modules/angular-mocks/angular-mocks.js',
       '*.js',
-      '*.html',
-      '*.html.ext',
+      // '*.html',
+      // '*.html.ext',
       // if you wanna load template files in nested directories, you must use this
       '**/*.html',
       'tests/*.test.js'
@@ -73,24 +73,30 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser should be started simultanous
-    concurrency: Infinity
+    concurrency: Infinity,
+
+    plugins: [
+      'karma-phantomjs-launcher',
+      'karma-jasmine',
+      'karma-ng-html2js-preprocessor'
+    ],
 
     ngHtml2JsPreprocessor: {
       // strip this from the file path
-      stripPrefix: 'public/',
-      stripSuffix: '.ext',
+      // stripPrefix: 'views/',
+      // stripSuffix: '.ext',
       // prepend this to the
-      prependPrefix: 'served/',
+      // prependPrefix: 'served/',
 
       // or define a custom transform function
       // - cacheId returned is used to load template
       //   module(cacheId) will return template at filepath
-      cacheIdFromPath: function(filepath) {
-        // example strips 'public/' from anywhere in the path
-        // module(app/templates/template.html) => app/public/templates/template.html
-        var cacheId = filepath.strip('public/', '');
-        return cacheId;
-      },
+      // cacheIdFromPath: function(filepath) {
+      //   // example strips 'public/' from anywhere in the path
+      //   // module(app/templates/template.html) => app/public/templates/template.html
+      //   var cacheId = filepath.strip('views/', '');
+      //   return cacheId;
+      // },
 
       // - setting this option will create only a single module that contains templates
       //   from all the files, so you can load them all with module('foo')
@@ -98,7 +104,7 @@ module.exports = function(config) {
       //   if you'd like to generate modules dynamically
       //   htmlPath is a originalPath stripped and/or prepended
       //   with all provided suffixes and prefixes
-      moduleName: 'foo'
+      moduleName: 'templates'
     }
   })
 }
