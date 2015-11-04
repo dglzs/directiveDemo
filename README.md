@@ -1,11 +1,21 @@
 # directiveDemo
 Angular directive demo
+
 ####Install dependencies
-`npm install`
+```
+npm install
+```
+
 ####Start a server
-1. `node_modules/http-server/bin/http-server`
-use `http-server` if you installed http-server globally
-2. visit localhost:8080
+```
+npm start
+```
+Use `http-server`if you installed http-server globally
+
+Visit localhost:8080/main.html
+
 ####Test
-`node_modules/karma/bin/karma start`
-use `karma start` if you installed karma globally
+```
+npm test
+```
+Use`karma start`if you installed karma globally
