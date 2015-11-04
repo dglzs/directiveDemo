@@ -8,22 +8,14 @@ npm install
 
 ####Start a server
 ```
-node_modules/http-server/bin/http-server
+npm start
 ```
-Use 
-```
-http-server
-```
-if you installed http-server globally
+Use `http-server`if you installed http-server globally
 
 Visit localhost:8080/main.html
 
 ####Test
 ```
-node_modules/karma/bin/karma start
+npm test
 ```
-Use
-```
-karma start
-```
-if you installed karma globally
+Use`karma start`if you installed karma globally
