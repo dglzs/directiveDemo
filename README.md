@@ -1,5 +1,5 @@
 # directiveDemo
-Angular directive demo
+a custom footer built with AngularJS
 
 ####Install dependencies
 ```
