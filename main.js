@@ -17,14 +17,7 @@ footer.controller('footerController', ['$scope', function($scope) {
 		website: 'http://www.beibi.cn',
 		websiteName: 'our site'
 	};
-	$scope.qiming = {
-		name: '启明星辰',
-		version: '10.0.13980.1',
-		status: 'alpha',
-		year: '2015',
-		website: 'http://alpha.nj.trantect.com/',
-		websiteName: '云子可信官网'
-	}
+	
 
 }]);
 
